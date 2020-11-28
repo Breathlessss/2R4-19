@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ccs</title>
+    <style>
+        
+        h1 {color: blue;}
+        p {
+            color: red; /* ЦВет текста */
+            text-indent: 30px; /* Красная строка */
+        } 
+        h2 {
+            color: #0a5090;
+        } 
+        span {
+            color: rgb(95, 202, 166);
+        }
+        #special {
+            width: 500px;
+        }
+        .bg {
+            background-color: #ff0;
+        }
+        .txt {
+            color: forestgreen;
+        }
+        .bold {
+            font-weight: bold;
+            color: black;
+        }
+        /*
+        Сначала пишите селектор *
+        Потом все стили для тегов
+        Потом все стили для классов
+        Потом все стили да id (А ЛУЧШЕ ЗАБЫТЬ ПРО css С id)
+        */
+    </style>
+</head>
+<body>
+   <!--h1>lorem3^p>lorem50+span>lorem5^lorem50^h2>lorem10^p*2>lorem65-->
+    <!-- > вложенно внутри-->
+    <!--h1+p+h2+p (братские теги)-->
+    <!--p*7 (умножение)-->
+    <!-- ^ (выйти на уровень вверх)-->
+    <!--(h1>lorem3)+p>lorem50-->
+    <!--h1>lorem3p>lorem50-->
+    <h1 class="bg">Lorem, ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod autem voluptatem, adipisci in cum distinctio, molestias iusto iste harum quia error reiciendis itaque aperiam at beatae, est magnam facere quidem. Voluptate vel corporis hic perferendis, eveniet maiores autem quidem deleniti quas esse impedit. Assumenda, dolor perspiciatis! Nobis explicabo vel dignissimos?<span class="bold txt">Lorem ipsum dolor sit amet.</span></p>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nam?</h2>
+    <p id="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laudantium ut labore laboriosam vero ducimus ullam soluta inventore eveniet adipisci voluptatem architecto quisquam libero sed exercitationem sequi unde, eum nostrum fugit suscipit magnam accusantium error! Saepe rem recusandae, nemo, unde soluta excepturi perferendis, nihil magnam at rerum accusamus. Ut molestias illum dolore amet dignissimos fugiat odit dicta nemo iste aut officia qui facere, voluptatum atque.</p>
+    <p class="txt bg">Quod tempore iure quo quisquam dicta, obcaecati unde sapiente omnis, enim vitae magni. Fugiat rem itaque illo natus. Aliquam, molestiae eius error natus quo reiciendis rem esse accusantium nulla qui magni, tempora atque optio laudantium fugiat recusandae deserunt in ad facilis porro temporibus explicabo earum cupiditate. Minima accusantium, at aliquid rem ut sunt, possimus recusandae iste corporis sequi voluptatem, nobis velit a dolores doloremque porro.</p>
+
+</body>
+</html>

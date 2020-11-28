@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            padding: 10px;
+            border: solid 1px;
+        }
+        .begInt {
+            background-color: mediumseagreen;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const rand = function(max = 100, min = 0) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+        let cnt = 10;
+        let table = "<table>";
+        for (let i = 0; i < cnt; i++) {
+            table += "<tr>"
+            for (let j = 0; j < cnt; j++) {
+                table+= "<td>";
+                let n = rand() + "";
+                if (n.length === 1) {
+                    n = "0" + n;
+                }
+                table += n;
+                table+= "</td>";
+            }
+            table += "</tr>";
+        }
+        table += "</table>";
+        document.body.innerHTML += table;
+
+        let cells = document.body.getElementsByTagName("td");
+        console.log(cells);
+        for (let i = 0; i < cells.length; i++){
+            let value = cells[i].innerHTML;
+            if (value > 50 && valuev < 65) {
+                cells[i].setAttribute("class", "bigInt");
+            } else if (value >= 65){
+                cells[i].setAttribute("style", "bacground: red; color: #fff;");
+            } 
+        }
+
+
+    </script>
+</body>
+</html>
